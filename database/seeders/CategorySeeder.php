@@ -12,7 +12,7 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        Category::create(['name' => 'General']);
+        Category::updateOrCreate(['name' => 'General']);
         $this->command->info('✅ Categories seeded successfully!');
     }
 }
